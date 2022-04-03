@@ -1,4 +1,4 @@
-# Typescript Mongoose Boilerplate
+# Javascript Mongoose Boilerplate(Email Verification)
 
 ## Folder Structure
 
@@ -7,31 +7,31 @@
 Main Folder
 └───Config
     └───index.js # Call all config Variable
-    └───logger.js # Log handler
 └───src
     │   server.js         # Application entry point
     └───Controller
         └───index.js  # Call all controller in one file
-        └───user.controller.js # user all controller/Logic
+        └───UserController.js # user all controller/Logic
     └───Database
         └───index.js # Database Config
     └───Middleware
         └───index.js # All Middleware call from this file
-        └───Authentication.Middleware.js # Authentication middleware
-        └───Error.Middleware.js # Error Middleware
+        └───Authentication.js # Authentication middleware
+        └───Error.js # Error Middleware
     └───Models
         └───index.js # All Models call from this file
-        └───user.model.js # User Model Config
+        └───UserModel.js # User Model Config
+        └───TokenModel.js # Token Model Config
     └───Routes
         └───index.js # All Routes call from this file
-        └───user.Routes.js # All User Routes
-        └───user.Authentication.js # All User Authentication Routes
+        └───UserRoutes.js # All User Routes
+        └───UserAuthentication.js # All User Authentication Routes
     └───Utils/Services
         └───index.js # All Services call from this file
-        └───APIFeature.service.js # Search, Pagination, Filter API
-        └───SendEmail.service.js # Mail Config File
-        └───SendToken.service.js # Token Config File
-        └───ErrorHandler.service.js # Whole Error Handler
+        └───APIFeature.js # Search, Pagination, Filter API
+        └───SendEmail.js # Mail Config File
+        └───SendToken.js # Token Config File
+        └───ErrorHandler.js # Whole Error Handler
 └───config.env # Secret environment Variables
 ```
 
